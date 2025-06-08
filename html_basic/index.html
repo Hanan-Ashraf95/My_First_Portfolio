@@ -2,33 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Hanan's First Cool Webpage!</title> <!-- Changed the title here -->
+    <title>Hanan's First Cool Webpage!</title>
 </head>
 <body>
-    <h1>Welcome to My Awesome Page!</h1>
-    
-    <p>This is my very first cool webpage, and I'm so excited to be building it step-by-step.</p>
-    
-    <h2>About This Page</h2>
-    <p>Here, you'll find a mix of interesting facts, my thoughts, and perhaps some pictures. I'm learning HTML, and this page is a great way to practice adding different elements.</p>
-    <p>I'm focusing on creating a well-structured document using proper headings and paragraphs, just like we learned!</p>
-    
-    <h3>A Fun Image for You!</h3>
-    <p>Below is an image. Click on it to go to a cool place!</p>
-    
-    <!-- This is a clickable image! -->
-    <!-- The <a> tag makes it clickable, and the <img> tag puts the picture. -->
-    <!-- The href attribute in <a> is where it will link to. -->
-    <!-- The src attribute in <img> is the image source. -->
-    <!-- The alt attribute in <img> is important for accessibility! -->
-    <a href="https://tech.alxafrica.com/egypt?utm_source=google&utm_medium=pmax&utm_campaign=egc_2024q1&utm_term=tofu-applications-tech-lite-eg&utm_content=all&gad_source=1&gad_campaignid=22097438156&gbraid=0AAAAAqmOtoCcpEUVT9jDvvg2vSa--RB-m&gclid=CjwKCAjw6ZTCBhBOEiwAqfwJd4yAnjLxzRVcni_SdZbxJ9THZEwphHcJ2zJWDja5kyadhSpoaBiiZhoCcWQQAvD_BwE" target="_blank">
-        <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="A cool logo that represents something fun!">
-    </a>
-    <a href="https://x.com/MustafaHosny/status/1931788023471182154">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/450px-X_logo_2023.svg.png" alt="X tweet">
-    </a>
-    <p>Thank you for visiting my page! I hope you enjoyed it.</p>
-    <p>Stay tuned for more updates as I continue my front-end journey!</p>
+    <header>
+        <!-- This is your REQUIRED navigation menu inside the header -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tweets.html">Tweets</a></li>
+        </ul>
+    </header>
 
+    <main>
+        <article>
+            <!-- ALL your existing content from index.html (headings, paragraphs, image) goes here -->
+            <h1>Welcome to My Awesome Page!</h1>
+            
+            <p>This is my very first cool webpage, and I'm so excited to be building it step-by-step.</p>
+            
+            <h2>About This Page</h2>
+            <p>Here, you'll find a mix of interesting facts, my thoughts, and perhaps some pictures. I'm learning HTML, and this page is a great way to practice adding different elements.</p>
+            <p>I'm focusing on creating a well-structured document using proper headings and paragraphs, just like we learned!</p>
+            
+            <h3>A Fun Image for You!</h3>
+            <p>Below is an image. Click on it to go to a cool place!</p>
+            
+            <!-- This is the clickable X logo image. It links to Mustafa Hosny's tweet. This is fine here in the article. -->
+            <a href="https://x.com/MustafaHosny/status/1931788023471182154" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/450px-X_logo_2023.svg.png" alt="X tweet logo linking to Mustafa Hosny's tweet">
+            </a>
+
+            <!-- Removed the old ALX image link here to keep only one main clickable image as per previous instructions. -->
+            <!-- The navigation to tweets.html is now handled by the header menu. -->
+            
+            <p>Thank you for visiting my page! I hope you enjoyed it.</p>
+            <p>Stay tuned for more updates as I continue my front-end journey!</p>
+        </article>
+
+        <aside>
+            <!-- This is the required <aside> tag -->
+            <p>placeholder to add comment thread later</p>
+        </aside>
+    </main>
+
+    <footer>
+        <!-- This is your REQUIRED footer -->
+        <!-- Ensure this paragraph is on a single line in your VS Code editor! -->
+        <p>Made by Hanan - <a href="https://github.com/Hanan-Ashraf95" target="_blank">here</a></p>
+    </footer>
 </body>
 </html>
